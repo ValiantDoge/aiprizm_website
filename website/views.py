@@ -1,11 +1,15 @@
+from multiprocessing import context
 from unicodedata import name
 from django.shortcuts import render, HttpResponse
+from .models import Service
 
 # Create your views here.
 
 
 def index(request):
-    return render(request, 'website/index.html')
+    service = Service.objects.all()
+    context = {'service': service }
+    return render(request, 'website/index.html', context)
 
 def service(request):
     return render(request, 'website/service.html')
