@@ -417,7 +417,7 @@ h6,
 }
 
 .team-item:hover .team-social {
-    background: rgba(9, 30, 62, .7);
+    background: rgba(9, 30, 62, 0.474);
 }
 
 .team-item:hover .team-social a.btn:first-child {
@@ -444,6 +444,12 @@ h6,
     transition: .3s .15s;
 }
 
+.team-item:hover .team-social a.btn:nth-child(5) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .20s;
+}
+
 .team-item .team-img img,
 .blog-item .blog-img img  {
     transition: .5s;
@@ -454,6 +460,11 @@ h6,
     transform: scale(1.15);
 }
 
+
+.team-desc-box{
+    max-width: 500px;
+    max-height: 500px;
+}
 
 /*** Miscellaneous ***/
 @media (min-width: 991.98px) {

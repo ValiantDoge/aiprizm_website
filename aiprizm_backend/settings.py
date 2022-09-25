@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 from xmlrpc.client import INTERNAL_ERROR
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -58,7 +57,9 @@ INTERNAL_IPS = [
     # ...
 ]
 
-ROOT_URLCONF = 'aiprizm_website.urls'
+ROOT_URLCONF = 'aiprizm_backend.urls'
+
+#context function
 
 TEMPLATES = [
     {
@@ -71,12 +72,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'website.context_processors.context_base',
             ],
         },
     },
 ]
 
-WSGI_APPLICATION = 'aiprizm_website.wsgi.application'
+WSGI_APPLICATION = 'aiprizm_backend.wsgi.application'
 
 
 # Database
@@ -119,6 +121,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
 
 
 # Static files (CSS, JavaScript, Images)
