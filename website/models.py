@@ -1,4 +1,6 @@
 from distutils.command.upload import upload
+import email
+from email import message
 from email.policy import default
 from http import client
 from django.db import models
@@ -48,3 +50,14 @@ class Team(models.Model):
 
     def __str__(self):
             return self.team_member_name
+
+class Contact(models.Model):
+    name = models.CharField(max_length=60)
+    email = models.CharField(max_length=60)
+    subject = models.CharField(max_length=200)
+    message = models.CharField(max_length=2000)
+
+    def __str__(self):
+        return self.email
+
+

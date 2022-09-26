@@ -59,12 +59,12 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# db.sqlite3
+# db.sqlite3-journal
 *.pyc
 __pycache__
 media
-aiprizm/migrations
+website/migrations
 
 
 # Flask stuff:

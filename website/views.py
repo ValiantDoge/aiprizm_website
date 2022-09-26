@@ -1,5 +1,9 @@
+from http.client import HTTPResponse
 from multiprocessing import context
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+from django.core.mail import send_mail, BadHeaderError
+
+from website.forms import ContactForm
 from .models import *
 
 # Create your views here.
@@ -51,5 +55,29 @@ def testimonial(request):
     return render(request, 'website/testimonial.html', context)
 
 def contact(request):
-    context={'nbar': 'contact'}
+    form  = ContactForm()
+
+    if request.method == 'POST':
+        
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = "Website Inquiry"
+            body = {
+                'name': form.cleaned_data['name'],
+                'subject': form.cleaned_data['subject'],
+                'email': form.cleaned_data['email'],
+                'message': form.cleaned_data['message'],
+            }
+            message = "\n".join(body.values())
+            form.save()
+
+            try:
+                send_mail(subject, message, 'agnelofernandes@gmail.com',['howis@gmail.com'])
+            except BadHeaderError:
+                return HTTPResponse('Invalid header found.')
+            # return HttpResponse("Your query has been sent.", status=200)
+
+    context={'nbar': 'contact', 'form': form}
     return render(request, 'website/contact.html', context)
+
+

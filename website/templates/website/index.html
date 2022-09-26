@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}Home - AiPrizm{% endblock title %}
-{% block content %}
+
 
 
 {% block navbar %}
@@ -10,11 +10,7 @@
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="/" class="navbar-brand p-0">
-            <h1 class="m-0">
-                <div class="container-fluid position-relative p-0">
-                    <img src="{% static 'website/img/logo-final.png' %}" alt="aiprizm-logo" style="width: 250px; height: 100px; padding-top: 10px;">
-                </div>
-            </h1>
+            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>AiPrizm</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
@@ -60,23 +56,25 @@
 <!-- Navbar End -->
 {% endblock navbar %}
 
+{% block content %}
 
 <!-- Carousel Start -->
-<div class="container-fluid position-relative p-0">
+
+
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="w-100" src="{%static 'website/img/carousel-1.jpg' %}" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h1 class="display-1 text-white mb-md-4 animated zoomIn" style="font-size: 3rem;">Offering modern data analytics
-                            solutions for growing your business</h1>
-                        <h5 class="text-white mb-3 animated slideInDown">We are a team of talented data scientists and engineers
-                            making large-scale web applications and dashboards for analytics and automating workflows</h5>
 
+                    <div class="p-3" style="max-width: 900px;">
+                        
+                        <h1 class="display-1 text-white mb-md-4 animated slideInDown ">Offering modern data analytics
+                            solutions for growing your business</h1>
+                        <h5 class="text-white mb-3 animated zoomIn pb-3">We are a team of talented data scientists and engineers
+                            making large-scale web applications and dashboards for analytics and automating workflows</h5>
                         <a href="/contact/" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Contact
                             Us</a>
-                        
                     </div>
                 </div>
             </div>
@@ -90,7 +88,7 @@
             <span class="visually-hidden">Next</span>
         </button> -->
     </div>
-</div>
+
 <!-- Carousel End -->
 
 
