@@ -39,7 +39,6 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
-                        <a href="/price/" class="dropdown-item">Pricing Plan</a>
                         <a href="/feature/" class="dropdown-item">Our features</a>
                         <a href="/team/" class="dropdown-item">Team Members</a>
                         <a href="/testimonial/" class="dropdown-item">Testimonial</a>
@@ -64,7 +63,7 @@
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="{%static 'website/img/carousel-1.jpg' %}" alt="Image">
+                <img class="w-100" src="{%static 'website/img/index-bg.jpg' %}" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 
                     <div class="p-3" style="max-width: 900px;">
@@ -73,8 +72,7 @@
                             solutions for growing your business</h1>
                         <h5 class="text-white mb-3 animated zoomIn pb-3">We are a team of talented data scientists and engineers
                             making large-scale web applications and dashboards for analytics and automating workflows</h5>
-                        <a href="/contact/" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Contact
-                            Us</a>
+                        <a href="/contact/" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -144,34 +142,14 @@
         <div class="row g-5">
             <div class="col-lg-7">
                 <div class="section-title position-relative pb-3 mb-5">
-                    <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                    <h1 class="mb-0">The Best IT Solution With 10 Years of Experience</h1>
+                    <h5 class="fw-bold text-primary text-uppercase">Who are we</h5>
+                    <h3 class="mb-0">We are customer and research oriented, multi-skilled engineers and consultants focused on successful
+                        business outcomes and exemplary customer experience</h3>
                 </div>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                    amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                    clita duo justo et tempor eirmod magna dolore erat amet</p>
-                <div class="row g-0 mb-3">
-                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
-                    </div>
-                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                    <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                        style="width: 60px; height: 60px;">
-                        <i class="fa fa-phone-alt text-white"></i>
-                    </div>
-                    <div class="ps-4">
-                        <h5 class="mb-2">Call to ask any question</h5>
-                        <h4 class="text-primary mb-0">+012 345 6789</h4>
-                    </div>
-                </div>
-                <a href="/quote/" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request
-                    A Quote</a>
+                <p class="mb-4" style="font-size: 1.125rem;">We provide solutions to address modern big data business challenges, helping your business gain
+                    actionable insights out of your data and use it for effective digital transformation. </p>
+                
+                <a href="/about/"class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Read more</a>
             </div>
             <div class="col-lg-5" style="min-height: 500px;">
                 <div class="position-relative h-100">
@@ -184,58 +162,187 @@
 </div>
 <!-- About End -->
 
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+        <div class="container py-5 wow fadeInUp" data-wow-delay="0.1s">
+
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Our Values</h5>
+                <h1 class="mb-0">Our values are the central, underlying philosophies that guide us</h1>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="box">
+                        <img src="{% static 'website/img/values-1.png' %}" class="img-fluid" alt=" value 1">
+                        <h3>Compassion, Honesty and Empathy</h3>
+                        <p>We are kind and caring to everyone we encounter. We build trust through responsible actions
+                            and honest relationships.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                    <div class="box">
+                        <img src="{% static 'website/img/values-2.png' %}" class="img-fluid" alt=" value 2">
+                        <h3>Trust, Dignity, Respect and Integrity</h3>
+                        <p>We value everyone and treat people with dignity and professionalism. We act with
+                            uncompromising
+                            honesty and integrity in everything we do.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                    <div class="box">
+                        <img src="{% static 'website/img/values-3.png' %}" class="img-fluid" alt="value 3">
+                        <h3>Teamwork, Accountability and Quality</h3>
+                        <p>We achieve more in collaboration and each of us is responsible for our words, actions, and
+                            results.
+                            We aim to satisfy our customers with innovative technology and superior quality, value and
+                            service.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Values Section -->
+
+<!-- Feature Point Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+                        src="{%static 'website/img/feature-sm.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase">Features</h5>
+                    <h2 class="mb-0">An Agile culture is about the mindset and the leadership. We believe in a shared philosophy and values
+                        across our teams.</h2>
+                </div>
+                <div class="row g-0 mb-3">
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Creativity</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Collaboration</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Ownership</h5>
+
+                    </div>
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Flexibility</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Passion</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Strategy</h5>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Feature Point End -->
 
 <!-- Features Start -->
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-            <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
+            <h5 class="fw-bold text-primary text-uppercase">Why should you work with AiPrizm?</h5>
             <h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1>
         </div>
+
         <div class="row g-5">
             <div class="col-lg-4">
                 <div class="row g-5">
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                        <h4 style="text-align: center; border-bottom: 1px solid #000;" class="pb-3">Our Agile Approach</h4>
+                        <p class="mb-0">We have the right knowledge and experience required for executing projects using
+                            the Agile methodology. As the word
+                            'agile' suggests, teams that follow agile principles can execute projects faster along with
+                            improving the quality of
+                            the overall deliverables. </p>
+                    </div>
+
                     <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
                         <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
                             style="width: 60px; height: 60px;">
                             <i class="fa fa-cubes text-white"></i>
                         </div>
-                        <h4>Best In Industry</h4>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        <h4>Improved Quality of the Product</h4>
+                        <p class="mb-0">We use an iterative approach to project management, meaning processes are improved upon each time an
+                            interval is repeated. Consistent focus on improvement, quality control and constant feedback is one of the core
+                            principles of Agile, and it helps to create superior products.</p>
                     </div>
                     <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
                         <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
                             style="width: 60px; height: 60px;">
-                            <i class="fa fa-award text-white"></i>
+                            <i class="fa-sharp fa-solid fa-bolt" style="color: white;"></i>
                         </div>
-                        <h4>Award Winning</h4>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        <h4>Adaptability</h4>
+                        <p class="mb-0">Our team is responsive to even last minute changes, and can adapt to it without much disruption. The
+                            deliverables are not set in stone, so we can easily reassess our plans and adjust our priorities to align with
+                            updated client goals. Being adaptable, teams can deliver consistently and manage clients’ changing requirements
+                            effectively.</p>
+                    </div>
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa-sharp fa-solid fa-person-skating" style="color: white;"></i>
+                        </div>
+                        <h4>Reduced Risk</h4>
+                        <p class="mb-0">We regularly assess progress during sprints, having better visibility into the project and can spot
+                            potential obstacles quickly. These minor issues can be tackled before they escalate, creating an effective risk
+                            mitigation process and giving the project a greater chance of success.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
                 <div class="position-relative h-100">
                     <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s"
-                        src="{%static 'website/img/feature.jpg' %}" style="object-fit: cover;">
+                        src="{%static 'website/img/features.jpg' %}" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="row g-5">
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                        <h4 style="text-align: center; border-bottom: 1px solid #000;" class="pb-3">Our High-Calibre Talent</h4>
+                        <p class="mb-0">Our services are carried out by highly trained professionals who know what it
+                            takes to give our highly esteemed customers value for their money. Our employees are trained
+                            in all aspects of our offerings to provide customized service to all our clients.</p>
+                    </div>
                     <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
                         <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
                             style="width: 60px; height: 60px;">
-                            <i class="fa fa-users-cog text-white"></i>
+                            <i class="fa-sharp fa-solid fa-bullseye" style="color: white;"></i>
                         </div>
-                        <h4>Professional Staff</h4>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        <h4>End goal mindset and chorded alignment with project goals</h4>
+                        <p class="mb-0">We hire problem-solving minds that focus on keeping the end in mind, to solve problems in OPTIMAL ways.
+                            We measure thinker performance and doer performance differently but objectively.</p>
                     </div>
                     <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
                         <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
                             style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
+                            <i class="fa-sharp fa-solid fa-people-group" style="color: white;"></i>
                         </div>
-                        <h4>24/7 Support</h4>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        <h4>Teamwork, encouragement and assistance</h4>
+                        <p class="mb-0">Our team is curious, strategic and when they get on with the job, they engage as a team. We enable our
+                            colleagues to “think agile,” pick it up and run with it across their areas.</p>
+                    </div>
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa-sharp fa-solid fa-satellite-dish" style="color: white;"></i>
+                        </div>
+                        <h4>Flattened Structure as less layers lead to better communication</h4>
+                        <p class="mb-0">We operate on a flat structure with a strong emphasis on teamwork. We talk about the team rather than
+                            individuals. More autonomy and responsibility for our employees has resulted in higher motivation, and more
+                            productivity</p>
                     </div>
                 </div>
             </div>
@@ -245,39 +352,9 @@
 <!-- Features Start -->
 
 
-<!-- Service Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-            <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
-            <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
-        </div>
-
-        <div class="row g-5">
-            {% for service in service %}
-            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                <div
-                    class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                    <div class="service-icon">
-                        <i class="{{service.service_icon}}"></i>
-                    </div>
-                    <h4 class="mb-3">{{service.service_name}}</h4>
-                    <p class="m-0">{{service.service_desc}}</p>
-                    <a class="btn btn-lg btn-primary rounded" href="">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            {% endfor %}
-
-
-        </div>
-    </div>
-    <!-- Service End -->
-
 
     <!-- Pricing Plan Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
@@ -358,7 +435,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Pricing Plan End -->
 
 
@@ -460,101 +537,6 @@
         </div>
     </div>
     <!-- Testimonial End -->
-
-
-    <!-- Team Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-            <h5 class="fw-bold text-primary text-uppercase">Team</h5>
-            <h1 class="mb-0">Our hard working team</h1>
-        </div>
-        <div class="row g-5">
-            {% for team in team %}
-            <div class="col-lg-3 wow slideInUp" data-wow-delay="0.3s">
-
-                <div class="team-item bg-light rounded overflow-hidden" style="height: 400px;">
-
-                    <div class="team-img position-relative overflow-hidden">
-                        {% if team.team_member_pic %}
-
-                        <img class="img-fluid w-100" src="/media/{{team.team_member_pic}}" alt="">
-
-                        <div class="team-social">
-                            {% if team.team_member_twitter %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_twitter}}"><i class="fab fa-twitter fw-normal"></i></a>
-                            {% endif %}
-
-                            {% if team.team_member_facebook %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_facebook}}"><i class="fab fa-facebook-f fw-normal"></i></a>
-                            {% endif %}
-
-                            {% if team.team_member_instagram %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_instagram}}"><i class="fab fa-instagram fw-normal"></i></a>
-                            {% endif %}
-
-                            {% if team.team_member_stackoverflow %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_stackoverflow}}"><i
-                                    class="fab fa-stack-overflow fw-normal"></i></a>
-                            {% endif %}
-
-                            {% if team.team_member_linkedin %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_linkedin}}"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            {% endif %}
-
-                        </div>
-                        {% else %}
-
-                        <div class="container py-2">
-                            <div class="team-desc-box mx-auto text-center py-4">{{team.team_member_desc}}</div>
-                        </div>
-                        <div class="team-social">
-                            {% if team.team_member_twitter %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_twitter}}"><i class="fab fa-twitter fw-normal"></i></a>
-                            {% endif %}
-
-                            {% if team.team_member_facebook %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_facebook}}"><i class="fab fa-facebook-f fw-normal"></i></a>
-                            {% endif %}
-
-                            {% if team.team_member_instagram %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_instagram}}"><i class="fab fa-instagram fw-normal"></i></a>
-                            {% endif %}
-
-                            {% if team.team_member_stackoverflow %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_stackoverflow}}"><i
-                                    class="fab fa-stack-overflow fw-normal"></i></a>
-                            {% endif %}
-
-                            {% if team.team_member_linkedin %}
-                            <a class="btn btn-md btn-primary btn-md-square rounded"
-                                href="{{team.team_member_linkedin}}"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            {% endif %}
-                        </div>
-                        {% endif %}
-                    </div>
-                    <div class="text-center py-4">
-                        <h4 class="text-primary">{{team.team_member_name}}</h4>
-                        <p class="text-uppercase m-0">{{team.team_member_profession}}</p>
-                    </div>
-
-                </div>
-
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-<!-- Team End -->
 
 
     <!-- Blog Start -->

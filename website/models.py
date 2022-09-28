@@ -1,15 +1,11 @@
-from distutils.command.upload import upload
-import email
-from email import message
 from email.policy import default
-from http import client
 from django.db import models
 
 # Create your models here.
 class Service(models.Model):
     service_name = models.CharField(max_length=50)
     service_desc = models.CharField(max_length=5000)
-    service_icon = models.CharField(max_length=50, default='')
+    service_icon = models.CharField(max_length=50, default='fa fa-code text-white')
 
     def __str__(self):
         return self.service_name

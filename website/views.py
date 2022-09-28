@@ -1,7 +1,7 @@
 from http.client import HTTPResponse
-from multiprocessing import context
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 from django.core.mail import send_mail, BadHeaderError
+from django.contrib import messages
 
 from website.forms import ContactForm
 from .models import *
@@ -36,10 +36,6 @@ def feature(request):
     context={'nbar': 'feature' , 'dropitem': 'pages'}
     return render(request, 'website/feature.html', context)
 
-def price(request):
-    context={'nbar': 'price', 'dropitem': 'pages'}
-    return render(request, 'website/price.html', context)
-
 def quote(request):
     context={'nbar': 'quote' , 'dropitem': 'pages'}
     return render(request, 'website/quote.html', context)
@@ -69,6 +65,7 @@ def contact(request):
                 'message': form.cleaned_data['message'],
             }
             message = "\n".join(body.values())
+            messages.success(request, 'Form submission successful')
             form.save()
 
             try:

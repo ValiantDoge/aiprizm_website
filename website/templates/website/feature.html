@@ -5,82 +5,164 @@
 {% block content %}
 
 
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- Full Screen Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+            <div class="modal-header border-0">
+                <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center justify-content-center">
+                <div class="input-group" style="max-width: 600px;">
+                    <input type="text" class="form-control bg-transparent border-primary p-3"
+                        placeholder="Type search keyword">
+                    <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
                 </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Full Screen Search End -->
+
+<!-- Feature Point Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase">Features</h5>
+                    <h2 class="mb-0">An Agile culture is about the mindset and the leadership. We believe in a shared philosophy and values
+                        across our teams.</h2>
+                </div>
+                <div class="row g-0 mb-3">
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Creativity</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Collaboration</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Ownership</h5>
+
+                    </div>
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Flexibility</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Passion</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Strategy</h5>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+                        src="{%static 'website/img/about.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature Point End -->
+
+<!-- Features Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Why should you work with AiPrizm?</h5>
+            <h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="row g-5">
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                        <h4 style="text-align: center;">Our Agile Approach</h4>
+                        <p class="mb-0">We have the right knowledge and experience required for executing projects using
+                            the Agile methodology. As the word
+                            ‘agile’ suggests, teams that follow agile principles can execute projects faster along with
+                            improving the quality of
+                            the overall deliverables. </p>
+                    </div>
+
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-cubes text-white"></i>
+                        </div>
+                        <h4>Improved Quality of the Product</h4>
+                        <p class="mb-0">We use an iterative approach to project management, meaning processes are improved upon each time an
+                            interval is repeated. Consistent focus on improvement, quality control and constant feedback is one of the core
+                            principles of Agile, and it helps to create superior products.</p>
+                    </div>
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa-sharp fa-solid fa-bolt" style="color: white;"></i>
+                        </div>
+                        <h4>Adaptability</h4>
+                        <p class="mb-0">Our team is responsive to even last minute changes, and can adapt to it without much disruption. The
+                            deliverables are not set in stone, so we can easily reassess our plans and adjust our priorities to align with
+                            updated client goals. Being adaptable, teams can deliver consistently and manage clients’ changing requirements
+                            effectively.</p>
+                    </div>
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa-sharp fa-solid fa-person-skating" style="color: white;"></i>
+                        </div>
+                        <h4>Reduced Risk</h4>
+                        <p class="mb-0">We regularly assess progress during sprints, having better visibility into the project and can spot
+                            potential obstacles quickly. These minor issues can be tackled before they escalate, creating an effective risk
+                            mitigation process and giving the project a greater chance of success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s"
+                        src="{%static 'website/img/features.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row g-5">
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                        <h4 style="text-align: center;">Our High-Calibre Talent</h4>
+                        <p class="mb-0">Our services are carried out by highly trained professionals who know what it
+                            takes to give our highly esteemed customers value for their money. Our employees are trained
+                            in all aspects of our offerings to provide customized service to all our clients.</p>
+                    </div>
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa-sharp fa-solid fa-bullseye" style="color: white;"></i>
+                        </div>
+                        <h4>End goal mindset and chorded alignment with project goals</h4>
+                        <p class="mb-0">We hire problem-solving minds that focus on keeping the end in mind, to solve problems in OPTIMAL ways.
+                            We measure thinker performance and doer performance differently but objectively.</p>
+                    </div>
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa-sharp fa-solid fa-people-group" style="color: white;"></i>
+                        </div>
+                        <h4>Teamwork, encouragement and assistance</h4>
+                        <p class="mb-0">Our team is curious, strategic and when they get on with the job, they engage as a team. We enable our
+                            colleagues to “think agile,” pick it up and run with it across their areas.</p>
+                    </div>
+                    <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa-sharp fa-solid fa-satellite-dish" style="color: white;"></i>
+                        </div>
+                        <h4>Flattened Structure as less layers lead to better communication</h4>
+                        <p class="mb-0">We operate on a flat structure with a strong emphasis on teamwork. We talk about the team rather than
+                            individuals. More autonomy and responsibility for our employees has resulted in higher motivation, and more
+                            productivity</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Full Screen Search End -->
+</div>
+<!-- Features Start -->
 
-    <!-- Features Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
-                <h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="row g-5">
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-cubes text-white"></i>
-                            </div>
-                            <h4>Best In Industry</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-award text-white"></i>
-                            </div>
-                            <h4>Award Winning</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s"
-                            src="{%static 'website/img/feature.jpg' %}" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row g-5">
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-users-cog text-white"></i>
-                            </div>
-                            <h4>Professional Staff</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-phone-alt text-white"></i>
-                            </div>
-                            <h4>24/7 Support</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features Start -->
 
-    
-    {% endblock content %}
+{% endblock content %}

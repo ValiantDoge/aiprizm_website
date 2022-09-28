@@ -82,7 +82,7 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
                         <!-- Contact Form Start -->
-                        <form action="" method="post" class="php-email-form">
+                        <form action="" method="post" class="php-email-form" onsubmit="norefresh()">
                             {% csrf_token %}
                             <div class="row g-3">
                                 {{form.non_field_errors}}
@@ -111,7 +111,14 @@
                                 </div>
     
                                 <div class="col-md-12 text-center">
-
+                                    <!-- <div class="loading">Loading</div>
+                                    <div class="error-message">Oops! There was an issue. Please mail us at
+                                        aiprizmtech@gmail.com
+                                    </div>
+                                    <div class="sent-message">Your message has been sent, we will get back to you. Thank
+                                        you!
+                                    </div>
+     -->
                                     <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                 </div>
     
@@ -130,6 +137,12 @@
             </div>
         </div>
     </section>
+
+    <script type="text/javascript">
+        function norefresh() {
+            event.preventDefault()
+        }
+        </script>
     
     <!-- Contact End -->
 
