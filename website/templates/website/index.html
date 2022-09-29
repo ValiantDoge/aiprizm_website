@@ -521,8 +521,11 @@
                 {% for testimonial in testimonial %}
                 <div class="testimonial-item bg-light my-4" style="height: 370px;">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="/media/{{testimonial.testclient_pic}}"
-                            style="width: 60px; height: 60px;">
+                        {% if testimonial.testclient_pic %}
+                        <img class="img-fluid rounded" src="{{testimonial.testclient_pic.url}}"
+                        style="width: 60px; height: 60px;">
+                        {% endif %}
+                       
                         <div class="ps-4">
                             <h4 class="text-primary mb-1">{{testimonial.testclient_name}}</h4>
                             <small class="text-uppercase">{{testimonial.testclient_profession}}</small>

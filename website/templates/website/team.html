@@ -41,7 +41,7 @@
                     <div class="team-img position-relative overflow-hidden">
                         {% if team.team_member_pic %}
 
-                        <img class="img-fluid w-100" src="/media/{{team.team_member_pic}}" alt="">
+                        <img class="img-fluid w-100" src="{{team.team_member_pic.url}}" alt="">
 
                         <div class="team-social">
                             {% if team.team_member_twitter %}

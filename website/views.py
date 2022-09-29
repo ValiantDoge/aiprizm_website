@@ -41,7 +41,7 @@ def quote(request):
     return render(request, 'website/quote.html', context)
 
 def team(request):
-    team = Team.objects.all()
+    team = Team.objects.all().order_by('order')
     context={'nbar': 'team' , 'dropitem': 'pages', 'team': team}
     return render(request, 'website/team.html', context)
 

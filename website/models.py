@@ -19,13 +19,13 @@ class ClientInfoCounter(models.Model):
 
 class Client(models.Model):
     client_name= models.CharField(max_length=50)
-    client_logo= models.ImageField(upload_to="website/images", default="")
+    client_logo= models.ImageField(upload_to="website/client/images", default="")
 
     def __str__(self):
         return self.client_name
 
 class Testimonial(models.Model):
-    testclient_pic=models.ImageField(upload_to="website/images", default="")
+    testclient_pic=models.ImageField(upload_to="website/client_test/images", default="")
     testclient_name=models.CharField(max_length=50)
     testclient_profession=models.CharField(max_length=50)
     testclient_desc=models.CharField(max_length=500)
@@ -34,10 +34,12 @@ class Testimonial(models.Model):
             return self.testclient_name
 
 class Team(models.Model):
-    team_member_pic=models.ImageField(upload_to="website/images", default="", blank=True)
+    team_member_pic=models.ImageField(upload_to="website/team/images", default="", blank=True)
     team_member_name=models.CharField(max_length=50)
     team_member_desc=models.CharField(max_length=1000)
     team_member_profession=models.CharField(max_length=50, default='')
+    order = models.IntegerField(null=True, blank=True)
+    #Socials
     team_member_twitter=models.URLField(max_length=300, default='', blank=True)
     team_member_facebook=models.URLField(max_length=300, default='', blank=True)
     team_member_instagram=models.URLField(max_length=300, default='', blank=True)

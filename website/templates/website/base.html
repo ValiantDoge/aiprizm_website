@@ -213,7 +213,7 @@
                 </div>
                 <div class="owl-carousel vendor-carousel">
                     {% for client in client %}
-                    <img src="/media/{{client.client_logo}}" alt="">
+                    <img src="{{client.client_logo.url}}" alt="">
                     {% endfor %}
                 </div>
             </div>
