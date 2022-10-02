@@ -51,7 +51,7 @@ class Team(models.Model):
 
 class Contact(models.Model):
     name = models.CharField(max_length=60)
-    email = models.CharField(max_length=60)
+    email = models.EmailField(max_length=60)
     subject = models.CharField(max_length=200)
     message = models.CharField(max_length=2000)
 

@@ -486,12 +486,17 @@
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12">
+                                    
                                     <select class="form-select bg-light border-0" style="height: 55px;">
                                         <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
+                                        {% for service in service %}
+                                        <option value="1">{{service.service_name}}</option>
+                                        {% endfor %}
+                                        {% comment %} <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>{% endcomment %}
+                                    </select> 
+                                    
+                                    
                                 </div>
                                 <div class="col-12">
                                     <textarea class="form-control bg-light border-0" rows="3"

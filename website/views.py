@@ -1,7 +1,7 @@
 from http.client import HTTPResponse
 from django.shortcuts import render
 from django.core.mail import send_mail, BadHeaderError
-from django.contrib import messages
+from django.conf import settings
 
 from website.forms import ContactForm
 from .models import *
@@ -57,19 +57,32 @@ def contact(request):
         
         form = ContactForm(request.POST)
         if form.is_valid():
-            subject = "Website Inquiry"
+            
             body = {
                 'name': form.cleaned_data['name'],
                 'subject': form.cleaned_data['subject'],
                 'email': form.cleaned_data['email'],
                 'message': form.cleaned_data['message'],
             }
-            message = "\n".join(body.values())
-            messages.success(request, 'Form submission successful')
+            # message = "\n".join(body.values())
+
+            #Email to User
+            subject = "Received Inquiry"
+            message = f"Hi {body.get('name')}, we have received your email. We'll get back to you shortly."
+            email = body.get('email')
+
+            #Email to Comapny
+            subject_company = f"(Website Inquiry) "+body.get('subject')
+            message_company = body.get('message')
+            email_company = 'agnelofernandes475@gmail.com'
             form.save()
 
             try:
-                send_mail(subject, message, 'agnelofernandes@gmail.com',['howis@gmail.com'])
+                #Email to User
+                send_mail(subject, message, 'settings.EMAIL_HOST_USER',[email])
+
+                #Email to Company
+                send_mail(subject_company, message_company, 'settings.EMAIL_HOST_USER',[email_company])
             except BadHeaderError:
                 return HTTPResponse('Invalid header found.')
             # return HttpResponse("Your query has been sent.", status=200)

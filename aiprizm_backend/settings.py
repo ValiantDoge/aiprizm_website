@@ -27,7 +27,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#EMAIL BACKEND FOR TESTING
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+#EMAIL BACKEND TO SEND EMAIL
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'howis7382@gmail.com'
+# EMAIL_HOST_PASSWORD = 'jzgwajmyllqdzqvy' #App password for the Google App (Aiprizm_test)
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
-    
+
 ]
 
 MIDDLEWARE = [
