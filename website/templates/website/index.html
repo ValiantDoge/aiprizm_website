@@ -10,7 +10,13 @@
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="/" class="navbar-brand p-0">
-            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>AiPrizm</h1>
+            
+                <div class=" logo-navbar container-fluid position-relative p-0">
+                    <img src="{% static 'website/img/logo-final (1).png' %}" alt="aiprizm-logo"
+                     class="logo">
+                    
+                </div>
+            
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
@@ -62,7 +68,7 @@
 
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" >
                 <img class="w-100" src="{%static 'website/img/index-bg.jpg' %}" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 
@@ -117,7 +123,7 @@
         <div class="row gx-2 gy-2">
             {% for clientinfo in clientinfo %}
             <div class="col-lg-3 wow zoomIn" data-wow-delay="0.1s">
-                <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+                <div class="bg-primary shadow d-flex align-items-center justify-content-left p-4"
                     style="height: 150px;">
                     <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
                         style="width: 60px; height: 60px;">
@@ -353,91 +359,101 @@
 
 
 
-    <!-- Pricing Plan Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Benefits Start -->
+
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
-                <h1 class="mb-0">We are Offering Competitive Prices for Our Clients</h1>
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 100%;">
+                <h5 class="fw-bold text-primary text-uppercase">Benefits of working with us</h5>
+                <h1 class="mb-0">AiPrizm's analytics and data science experts can help your organization</h1>
             </div>
-            <div class="row g-0">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="bg-light rounded">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Basic Plan</h4>
-                            <small class="text-uppercase">For Small Size Business</small>
+    
+            <div class="row g-5">
+                <div class="col-sm-4  wow zoomIn" data-wow-delay="0.9s">
+                    <div class="position-relative">
+                        <img class="img-fluid p-4  wow zoomIn" data-wow-delay="0.1s" 
+                            src="{%static 'website/img/benefits.png' %}" >
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        
+    
+                        <div class=" col-12 icon-box wow zoomIn" data-wow-delay="0.2s">
+                                    <i class="fa-solid fa-2x fa-chart-line"></i>
+
+                                <div>
+                                    <h4 style="text-align: center; border-bottom: 1px solid #000;" class=" pb-3">Increased profits</h4>
+                                    <p class="mb-0">We can help you tap into your data to compare and contrast metrics by measuring, tracking and recording
+                                        them for you to make informed data-driven decisions that can help you to increase profits.</p>
+                                    </div>
+                            
                         </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top"
-                                    style="font-size: 22px; line-height: 45px;">$</small>49.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        <div class="col-12 icon-box wow zoomIn" data-wow-delay="0.6s">
+                            <i class="fa-solid fa-2x fa-brush"></i>
+                            <div>
+                                <h4 style="text-align: center; border-bottom: 1px solid #000;" class="pb-3">Increase operational efficiency</h4>
+                            
+                                <p class="mb-0">We examine and probe existing processes to develop additional methods to optimize them. Using various
+                                    analytical techniques we can figure out issues that bottleneck productivity and output. </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 icon-box wow zoomIn" data-wow-delay="0.6s">
+                            <i class="fa-solid fa-terminal"></i>
+                            <div>
+                                <h4 style="text-align: center; border-bottom: 1px solid #000;" class="pb-3">Increase operational efficiency</h4>
+                            
+                                <p class="mb-0">We examine and probe existing processes to develop additional methods to optimize them. Using various
+                                    analytical techniques we can figure out issues that bottleneck productivity and output. </p>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Standard Plan</h4>
-                            <small class="text-uppercase">For Medium Size Business</small>
+                
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        
+                        <div class="col-12 icon-box wow zoomIn" data-wow-delay="0.8s">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <div>
+                                <h4 style="text-align: center; border-bottom: 1px solid #000;" class="pb-3">Manage and understand your data better</h4>
+            
+                                <p class="mb-0">To exploit your data holds, it is crucial to have a good dataset. We help you to extract clean and
+                                    quality data. Furthermore, we can analyze your data, bring out insights and prescribe actions to improve your
+                                    organization's performance</p>
+                            </div>
+                            
                         </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top"
-                                    style="font-size: 22px; line-height: 45px;">$</small>99.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        <div class="col-12 icon-box wow zoomIn" data-wow-delay="0.8s">
+                            <i class="fa-solid fa-star"></i>
+                            <div>
+                                <h4 style="text-align: center; border-bottom: 1px solid #000;" class="pb-3">Know your business and customers better</h4>
+            
+                                <p class="mb-0">Our data science services can help businesses to figure out market trends, understand customer behavior,
+                                    build business strategies and predict future events.</p>
+                            </div>
+                            
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="bg-light rounded">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Advanced Plan</h4>
-                            <small class="text-uppercase">For Large Size Business</small>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top"
-                                    style="font-size: 22px; line-height: 45px;">$</small>149.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        <div class="col-12 icon-box wow zoomIn" data-wow-delay="0.8s">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                            <div>
+                                <h4 style="text-align: center; border-bottom: 1px solid #000;" class="pb-3">Assess and mitigate risks in time</h4>
+                            
+                                <p class="mb-0">In business, risks are everywhere. We are trained to recognize data that stands out in a way. We use
+                                    models to find unusual events and create alerts to help ensure timely responses. </p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Pricing Plan End -->
+    </div>
 
+    <!-- Benefits End -->
 
     <!-- Quote Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">

@@ -1,3 +1,5 @@
+
+
 /********** Template CSS **********/
 :root {
     --primary: #06A3DA;
@@ -131,6 +133,7 @@ h6,
     padding: 35px 0;
     color: #FFFFFF;
     font-size: 18px;
+    height: 100px;
     font-weight: 600;
     outline: none;
     transition: .5s;
@@ -494,7 +497,7 @@ h6,
 }
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/index-bg.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -512,37 +515,54 @@ h6,
     }
 }
 
+
+
+.logo-navbar .logo{
+    
+    width: 190px;
+    height: 150px;
+    transition: 1s;
+    padding: 15px;
+    /* border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%; */
+}
+
+
+/*--------------------------------------------------------------
+# Benefits
+--------------------------------------------------------------*/
+
+.icon-box {
+    display: flex;
+    height: 230px;
+  }
+
+  .icon-box h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #000000;
+  }
+  .icon-box i {
+    font-size: 44px;
+    line-height: 44px;
+    color: #000000;
+    margin-right: 15px;
+  }
+  .icon-box p {
+    font-size: 1rem;
+    color: #848484;
+  }
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info-box {
-    color: #444444;
-    background: #fafbff;
-    padding: 30px;
-  }
-  .contact .info-box i {
-    font-size: 38px;
-    line-height: 0;
-    color: #4154f1;
-  }
-  .contact .info-box h3 {
-    font-size: 20px;
-    color: #012970;
-    font-weight: 700;
-    margin: 20px 0 10px 0;
-  }
-  .contact .info-box p {
-    padding: 0;
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-  .contact .php-email-form {
+
+  .contact-form {
     background: #fafbff;
     padding: 30px;
     height: 100%;
   }
-  .contact .php-email-form .error-message {
+  .contact-form .error-message {
     display: none;
     color: #fff;
     background: #ed3c0d;
@@ -551,7 +571,7 @@ h6,
     margin-bottom: 24px;
     font-weight: 600;
   }
-  .contact .php-email-form .sent-message {
+  .contact-form .sent-message {
     display: none;
     color: #fff;
     background: #18d26e;
@@ -560,14 +580,14 @@ h6,
     margin-bottom: 24px;
     font-weight: 600;
   }
-  .contact .php-email-form .loading {
+  .contact-form .loading {
     display: none;
     background: #fff;
     text-align: center;
     padding: 15px;
     margin-bottom: 24px;
   }
-  .contact .php-email-form .loading:before {
+  .contact-form .loading:before {
     content: "";
     display: inline-block;
     border-radius: 50%;
@@ -579,22 +599,22 @@ h6,
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
   }
-  .contact .php-email-form input, .contact .php-email-form textarea {
+  .contact-form input, .contact-form textarea {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
     border-radius: 0;
   }
-  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  .contact-form input:focus, .contact-form textarea:focus {
     border-color: var(--primary);
   }
-  .contact .php-email-form input {
+  .contact-form input {
     padding: 10px 15px;
   }
-  .contact .php-email-form textarea {
+  .contact-form textarea {
     padding: 12px 15px;
   }
-  .contact .php-email-form button[type=submit] {
+  .contact-form button[type=submit] {
     background: var(--primary);
     border: 0;
     padding: 10px 30px;
@@ -602,7 +622,7 @@ h6,
     transition: 0.4s;
     border-radius: 4px;
   }
-  .contact .php-email-form button[type=submit]:hover {
+  .contac-form button[type=submit]:hover {
     background: var(--primary);
   }
   @-webkit-keyframes animate-loading {
